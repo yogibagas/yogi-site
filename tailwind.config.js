@@ -1,5 +1,16 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: {
+    // Configure as you need
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    // These options are passed through directly to PurgeCSS
+    options: {
+      // List your classes here, or you can even use RegExp
+      safelist: ['bg-red-500', 'px-4', /^text-/, 'grid-cols-2'],
+      blocklist: [/^debug-/],
+      keyframes: true,
+      fontFace: true,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
