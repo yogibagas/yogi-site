@@ -13,9 +13,7 @@
 export default {
   setup(){
     const menu = [
-     { label:'Tentang Saya', route:'About'},
-     { label:'Cerita Saya', route:'Blog'},
-     { label:'Portfolio', route:'Portfolio'},
+     { label:'Coming Soon Dulu ya temen-temen karna masih tahap build 😋 ', route:'About'},
     ]
 
     return {
