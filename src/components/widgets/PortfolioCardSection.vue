@@ -36,7 +36,7 @@
     >
       <div class="image">
         <img
-          :src="'/src/assets/portfolio/'+portfolio.thumbnail"
+          :src="'./src/assets/portfolio/'+portfolio.thumbnail"
           class="w-full object-cover"
         />
       </div>
