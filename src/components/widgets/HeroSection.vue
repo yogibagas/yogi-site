@@ -15,7 +15,7 @@
         <transition name="fade" appear>
           <div>
             <h1
-              class="
+              class=" font-josefin
                 text-8xl
                 opacity-50
                 text-black-400 text-stroke
