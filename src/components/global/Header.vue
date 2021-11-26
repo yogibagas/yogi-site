@@ -2,7 +2,7 @@
 import Sidebar from "./elements/Sidebar.vue";
 </script>
 <template>
-  <div class="flex w-full absolute py-4">
+  <div class="flex w-full absolute py-4 ml-4 md:ml-0">
     <div class="max-w-screen-xl w-full mx-auto">
       <button
         class="toggle"

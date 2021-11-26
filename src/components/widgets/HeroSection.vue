@@ -1,7 +1,7 @@
 <template>
   <div
-    class="
-      background
+    class=" px-4
+      background w-full
       section-wrapper
       bg-gradient-to-t
       from-white
@@ -10,13 +10,13 @@
       py-24
     "
   >
-    <div class="flex max-w-screen-xl items-center mx-auto w-full">
-      <div class="text w-1/2">
+    <div class="flex flex-col md:flex-row max-w-screen-xl items-center mx-auto w-full">
+      <div class="text w-full md:w-1/2">
         <transition name="fade" appear>
           <div>
             <h1
               class=" font-josefin
-                text-8xl
+                text-5xl md:text-8xl
                 opacity-50
                 text-black-400 text-stroke
                 font-bold
@@ -110,13 +110,13 @@
           </div>
         </div>
       </div>
-      <div class="images-section w-1/2 flex items-center">
+      <div class="images-section w-full md:w-1/2 flex items-center">
         <!-- <div class="bg-black flex flex-col w-72 h-96 absolute right-22"></div> -->
         <img
           src="./../../assets/yogi-bagas.jpg"
           alt="Profile"
           srcset=""
-          class="flex flex-col object-cover w-96 transform rotate-6 mx-auto"
+          class="flex flex-col object-cover w-96 transform rotate-0 mt-4 md:mt-0 md:rotate-6 mx-auto"
         />
       </div>
     </div>

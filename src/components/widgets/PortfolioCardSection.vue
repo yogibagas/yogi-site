@@ -1,8 +1,8 @@
 <template>
-<div class="reading-section flex flex-col bg-gray-100 py-16">
+<div class="reading-section flex flex-col bg-gray-100 py-16 px-4">
     <div class="flex max-w-screen-xl mx-auto w-full flex-col">
       <div class="title">
-        <h1 class="text-5xl text-black-400 font-bold uppercase heading">
+        <h1 class="text-3xl md:text-5xl text-black-400 font-bold uppercase heading">
           <span class="has-tooltip text-stroke"
             >#PORTFOLIO
             <span
@@ -26,8 +26,8 @@
       </div>
       <div class="content mt-16">
   <div
-    class="card wrapper grid gap-4"
-    :class="[cols ? 'grid-cols-' + cols : 'grid-cols-3']"
+    class="card wrapper grid gap-4 grid-cols-1"
+    :class="[cols ? 'md:grid-cols-' + cols : 'md:grid-cols-3']"
   >
     <div
       class="card-item relative flex flex-col"
