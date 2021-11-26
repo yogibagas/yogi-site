@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+.tooltip {
+  @apply invisible absolute;
+}
+.has-tooltip {
+  @apply border-b-2 border-black;
+}
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+.has-tooltip.text-stroke .tooltip{
+
+  -webkit-text-fill-color:currentColor;
+  -webkit-text-stroke-width: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Montserrat&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E")
+      3 3,
+    auto;
+}
+.tetikus__contents {
+  width: 5px;
+  height: 5px;
+  background: brown;
+}
+.tetikus__cursor {
+  @apply animate-ping;
+}
+
+h1,h2,h3,h4,h5,.heading {
+  font-family: "Montserrat", sans-serif;
+}
+
+.border-animate::before, .border-animate::after {
+  content:'';
+  @apply absolute w-full h-full z-10  transform scale-0 box-border top-0 left-0 transition duration-500;
+}
+
+.border-effect::before {
+  @apply border-b border-l border-current origin-top-right;
+  /* -webkit-transform-origin: 0 100%; */
+}
+
+.border-effect::after {
+  @apply border-t border-r border-current origin-bottom-left;
+  /* -webkit-transform-origin: 100% 0%; */
+}
+
+.border-animate:hover::after, .border-animate:hover::before {
+  @apply transform scale-100;
+}
+.card-item{
+  @apply overflow-hidden
+}
+.portfolio-detail{
+  @apply absolute -bottom-full w-full bg-black text-white bg-opacity-70 h-full opacity-0 text-center flex overflow-hidden transition-all duration-500;
+}
+.card-item:hover .portfolio-detail{
+  @apply flex bottom-0 opacity-100 overflow-hidden;
+}
+
+.text-stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+}
+.text-stroke-small {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+}
+@tailwind utilities;
