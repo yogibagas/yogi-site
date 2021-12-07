@@ -27,7 +27,7 @@
       <div class="content mt-16">
   <div
     class="card wrapper grid gap-4 grid-cols-1"
-    :class="[cols ? 'md:grid-cols-' + cols : 'md:grid-cols-3']"
+    :class="[cols ? 'md:grid-cols-2' : 'md:grid-cols-3']"
   >
     <div
       class="card-item relative flex flex-col"

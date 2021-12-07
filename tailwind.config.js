@@ -5,7 +5,7 @@ module.exports = {
     // These options are passed through directly to PurgeCSS
     options: {
       // List your classes here, or you can even use RegExp
-      safelist: ['bg-red-500', 'px-4', /^text-/, 'grid-cols-2'],
+      safelist: [ /^text-/, 'grid-cols-2'],
       blocklist: [/^debug-/],
       keyframes: true,
       fontFace: true,
